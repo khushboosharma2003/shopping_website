@@ -8,7 +8,7 @@ export default function Navbar() {
         <h1>SHOPY</h1>
         <div className="menu">
           <ul>
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/shopping_website">Home</Link></li>
             <li><Link to="/products">Shop</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>

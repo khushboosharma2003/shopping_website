@@ -32,18 +32,18 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route index exact path="/" element={<Home />} />
-          <Route exact path="/products" element={<ProductList handleClick={handleClick} />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/about" element={<About />} />
-          {/* Pass cart and setCart to Cart component */}
-          <Route exact path="/wishlist" element={<Cart cart={cart} setCart={setCart}  />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route index path="/shopping_website" element={<Home />} />
+        <Route exact path="/products" element={<ProductList handleClick={handleClick} />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/about" element={<About />} />
+        {/* Pass cart and setCart to Cart component */}
+        <Route exact path="/wishlist" element={<Cart cart={cart} setCart={setCart}  />} />
+      </Routes>
+    </BrowserRouter>
+  </div>
   );
 }
 
